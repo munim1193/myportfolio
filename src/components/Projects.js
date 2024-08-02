@@ -1,8 +1,8 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import p1 from "../assets/img/p1.jpeg";
-import p2 from "../assets/img/p2.jpg"
-import p3 from "../assets/img/p3.jpg"
+import p2 from "../assets/img/p2.png"
+import p3 from "../assets/img/p3.png"
 import p4 from "../assets/img/p4.png"
 import p5 from "../assets/img/p5.jpg"
 import p6 from "../assets/img/p6.jpg"
@@ -17,31 +17,37 @@ export const Projects = () => {
       title: "Workout Training System",
       description: "Design & Development",
       imgUrl: p1,
+      url: "https://example.com/workout-training-system"
     },
     {
-      title: "Traffic Sign Recognition System",
+      title: "Professional Dashboard",
       description: "Design & Development",
       imgUrl: p2,
+      url: "https://bespoke-biscotti-a32b33.netlify.app/"
     },
     {
-      title: "Digital Image Processing Tutorial Website",
+      title: "Nexcent Landing Page",
       description: "Design & Development",
       imgUrl: p3,
+      url: "https://exquisite-fox-2e207a.netlify.app/"
     },
     {
       title: "Personal Portfolio",
       description: "Design & Development",
       imgUrl: p4,
+      url: "https://myportfolio-eight-topaz.vercel.app/"
     },
     {
       title: "Rock And Mine Prediction System",
       description: "Design & Development",
       imgUrl: p5,
+      url: "https://example.com/rock-and-mine-prediction-system"
     },
     {
       title: "Food Nutrition Calculator",
       description: "Design & Development",
       imgUrl: p6,
+      url: "https://example.com/food-nutrition-calculator"
     },
   ];
 
@@ -76,7 +82,7 @@ export const Projects = () => {
                               <ProjectCard
                                 key={index}
                                 {...project}
-                                />
+                              />
                             )
                           })
                         }
